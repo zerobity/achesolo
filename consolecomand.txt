@@ -1,0 +1,16 @@
+1. Descargamos laradock
+git submodule add https://github.com/Laradock/laradock.git
+
+2. En /laradock tomamos el archivo example-env y lo renombramos a .env
+
+3. Ejecutamos los contenedores (la primera vez los descarga)
+docker-compose up -d mysql nginx workspace
+
+4. Ejecutamos el workspace (tiene instalado todo lo necesario)
+docker-compose exec --user=laradock workspace bash
+
+5. Dentro del workspace hacemos
+composer update
+composer install
+
+
