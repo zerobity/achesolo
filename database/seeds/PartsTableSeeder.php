@@ -1,5 +1,7 @@
 <?php
 
+use App\Part;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
 class PartsTableSeeder extends Seeder
@@ -11,6 +13,8 @@ class PartsTableSeeder extends Seeder
      */
     public function run()
     {
+        $now = Carbon::now()->toDateTimeString();
+        
         Part::insert([
             ['story_id' => 1, 'text' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, quisquam atque commodi eaque dolorem qui.', 
             'image' => '-', 'star' => 30, 'created_at' => $now, 'updated_at' => $now],
