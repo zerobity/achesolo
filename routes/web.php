@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'LandingPageController@index')->name('landing-page');
 
 Route::get('/story/{storyId}', 'StoryController@getStory')->name('story-page');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
