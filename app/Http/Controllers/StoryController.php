@@ -12,6 +12,9 @@ class StoryController extends Controller
     {
         $story = Story::where('id', $storyId)->first();
         $parts = Part::where('story_id', $storyId)->get();
-        dd($parts);
+        //dd($parts);
+        return view('sections')->with([
+            'parts' => $parts, 
+            ]);
     }
 }
