@@ -17,3 +17,8 @@ dd($variable)-- debugger
 ## Cambios en la BD
 Para hacer cambios en la BD, se debe modificar/crear el archivo de migration.
 Luego correr el comando php artisan migrate:refresh --seed. Esto creará el modelo de acuerdo a lo que está en el migration y además hará una carga inicial con lo que esté en el seed.
+
+## npm-vue
+Correr npm install
+npm run dev
+npm run watch
