@@ -18,7 +18,7 @@ class CreatePartsTable extends Migration
             $table->integer('story_id');
             $table->string('text');
             $table->string('image');
-            $table->integer('star');
+            $table->integer('end');
             $table->timestamps();
         });
     }

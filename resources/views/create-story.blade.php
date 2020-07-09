@@ -3,8 +3,7 @@
 @section('title', __('Nueva Historia'))
 
 @section('content')
-<div>
-    <example-component></example-component>
-    <story-creator></story-creator>
+<div class="container">
+    <create-story></create-story>
 </div>
 @endsection

@@ -10,31 +10,3 @@
         </ul>
     </div> <!-- end footer-content -->
 </footer>
-
-<style>
-footer {
-  background: #535353;
-  color: #e9e9e9;
-  padding: 40px 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-content .heart {
-  color: #FFBABA;
-}
-
-.footer-content ul {
-  display: flex;
-  width: 30%;
-  justify-content: space-between;
-}
-
-.footer-content a {
-  color: #e9e9e9;
-}
-
-</style>
